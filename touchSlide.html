@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>touchSlide</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="animate.css" />
+        <link rel="stylesheet" href="touchSlide.css">
+    </head>
+    <body>
+        <div data-name="touchSlide" class="touchSlide test1">
+            <div  class="touchSlide-item item1">
+                <h1 class="first" data-class="bounceInLeft animated" >first page</h1>
+                <p class="two" data-class="bounceInRight animated" data-delay="1000">next page</p>
+                <p class="three" data-class="zoomIn animated" data-delay="2000">next page</p>
+            </div>
+            <div class="touchSlide-item item2">
+                <h1 class="first" data-class="bounceInLeft animated" >two page</h1>
+                <p class="two" data-class="bounceInRight animated" data-delay="500">next page</p>
+                <p class="three" data-class="zoomInUp animated" data-delay="1000">next page</p>
+            </div>
+            <div class="touchSlide-item item3" style="background:blue;">
+                <h1 class="first" data-class="bounceInLeft animated" data-delay="0">three page</h1>
+                <p class="two" data-class="bounceInRight animated" data-delay="1000">next page</p>
+                <p class="three" data-class="zoomInDown animated" data-delay="2000">next page</p>
+            </div>
+        </div>
+        <script src="touchSlide.js"></script>
+        <script>
+            var slider = new touchSlide("[data-name='touchSlide']");
+        </script>
+    </body>
+</html>

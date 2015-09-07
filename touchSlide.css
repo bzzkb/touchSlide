@@ -1,0 +1,33 @@
+* {padding:0;margin:0;}
+body , html {
+    height:100%;
+    overflow: hidden;
+    width:100%;
+}
+.touchSlide {
+    height:100%;
+    overflow:hidden;
+    position:relative;
+    transition: all .5s ease;
+}
+.touchSlide-item {
+    width:100%;
+    height:100%;
+}
+.touchSlide-item .first ,.touchSlide-item .two , .touchSlide-item .three {
+    position: relative;
+    left:50%;
+    line-height: 30px;
+    font-size:18px;
+    color:#fff;
+    display:none;
+}
+.touchSlide .item1 {
+    background:red;
+}
+[data-class].animated {
+    display:block!important;
+}
+.touchSlide .item2 {
+    background:graytext;
+}
